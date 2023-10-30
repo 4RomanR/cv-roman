@@ -3,109 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV René Rivera</title>
-    <meta name="description" content="Curriculum vitae de René Rivera">
-	<meta name="author" content="René Rivera"> 
-    <style>
-        body{
-            background-color:#0d1118;
-            color: #99bcf0;
-            
-        }
-        h1, h2, h3,a{
-            color: #3fb950;
-
-        }
-        
-    </style>
+    <title>René Rivera</title>
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant:wght@300&display=swap" rel="stylesheet">
+    <meta name="description" content="Web developer fullstack">
 </head>
 <body>
     <header>
-        <h1>R e n é   R i v e r a</h1>
-        <div>
-            <p>Web Developer</p>
-            <img src="./filetype-html.svg" alt="html">
-            <img src="./filetype-css.svg" alt="css">
-            <img src="./filetype-js.svg" alt="javascript">
-            <hr>
+        <div class="hero-1">
+            <h1>RENÉ RIVERA </h1>
+            <a href="#about-id"><p>Developer Full Stack<span> | PORTFOLIO</span></p></a>
         </div>
+        <div class="hero-2">
+            <img src="./assets/img/code.png" alt="code">
+        </div>
+ 
     </header>
     <main>
-        <section>
-        
-            <details open>
-                <summary><h2>Experiencia Laboral</h2></summary>
+        <hr class="line">
+        <section id="about-id" class="about">
+            <div class="about-2">
+                <img src="./assets/img/perfil-1.png" alt="">
+            </div>
+            <div class="about-1">
+                <h2>About</h2>
+                <p>I’m excited to learn new tools and technologies to solve complex problems. Look at my learning path.
+                I use Python, HTML, CSS, JavaScript, ReactJS, Tailwind and NodeJS.
+                I would love to work on challenging projects and grow as a full-stack engineer.</p>
+                <button class="btn-cv">Download CV</button>
+            </div>
+
+        </section>
+
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+            <p>I have experience with open source projects.</p>
+
+            <details>
+                <summary>Work experience</summary>
+                <h2></h2>
                 <ul>
                     <li>
                         <em>LADM and RUMBARROCO</em>
-                        <p>Abril 2023 actual</p>
+                        <p>April 2023</p>
                         <ul>
-                            <li><p>Webmaster</p></li>
-                            <li><p>Transcripción de partituras</p></li>
-                            <li><p>Editor de Videos</p></li>
+                            <li><p>Front end and Webmaster</p></li>
+                            <li><p>Designer</p></li>
                         </ul>
                     </li>
                 </ul>        
                 <ul>
                     <li>
-                        <em>INDEPENDIENTE</em>
-                        <p>Marzo 2022 actual</p>
+                        <em>INDEPENDENT</em>
+                        <p>March 2022</p>
                         <ul>
                             <li><p>Web Developer</p></li>
-                            <li><p>Páginas estáticas y dinámicas</p></li>
+                            <li><p>Dynamic and static web pages</p></li>
+                            <li><p>Mobile First</p></li>
                             <li><p>Responsive design</p></li>
                         </ul>
                     </li>
                 </ul>
+                
             </details>
-            
         </section>
-        <section>
-            
-            <details>
-                <summary><h2>Educación</h2></summary>
-                <ul>
-                    <li>
-                        <p><strong>Universidad de Carabobo</strong></p>
-                        <p>Julio 17 2013</p>
-                        <ul>
-                            <li><p>Educación Musical</p></li>
-                        </ul>
-                    </li>
-                </ul>
-            </details>
-            
-        </section>
-        <section>
-            
-            <details>
-                <summary><h2>Skills</h2></summary>
-                <ul>
-                    <li><p>Organización</p></li>
-                    <li><p>Trabajo en equipo</p></li>
-                    <li><p>Responsabilidad y lealtad</p></li>
-                    <li><p>Trabajo bajo presión</p></li>
-                </ul>
-            </details>
-            
-        </section>
-        <hr>
-        <aside>
-            <h3><em>CONTACTO</em></h3>
-            <ul>
-                <li><p>4rprogramming@gmail.com</p></li>
-                <li><p>319-4942030</p></li>
-                <li><a href="www.linkedin.com/in/riveraroman"><i>Linkedin</i></a></li>
-            </ul>
-        </aside>
 
+        <section class="skills">
+            <h2>Skills</h2>
+            <p>I use Python, HTML, CSS, JavaScript, ReactJS, NodeJS, MongoDB and MySQL.</p>
+            <details class="programs">
+                <summary>General knowledge</summary>
+                <img src="./assets/img/html.png" alt="HTML">
+                <img src="./assets/img/css.png" alt="CSS">
+                <img src="./assets/img/js.png" alt="JavaScript">
+                <img src="./assets/img/react.png" alt="ReactJS">
+                <img src="./assets/img/node.png" alt="NodeJS">
+                <img src="./assets/img/mongo.png" alt="MongoDB">
+            </details>
+
+
+        </section>
+
+        <section class="contact">
+            <h2>Contact</h2>
+            <p>I think the key to living a happy life is doing what you love. For more information, please see my resume or write me.</p>
+            <form action="">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email">
+
+                <label for="textarea">Hire me</label>
+                <textarea id="textarea" name="textarea" rows="4" cols="50">Hello, I've been looking for you all this time</textarea>
+
+                <input class="btn-submit" type="submit" name="" id="">
+            </form>
+
+
+        </section>
     </main>
-    
     <footer>
-        <p>&copy; <strong>2023</strong>René Rivera</p>
+        <p>&copy; <strong>2023</strong> - René Rivera</p>
         <a href="mailto: xxxxxx@xxxx.xxx" target="_blank"></a>
     </footer>
-
-
 </body>
 </html>
+

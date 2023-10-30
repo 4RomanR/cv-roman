@@ -1,0 +1,241 @@
+:root{
+    /* ----------day----------- */
+    --back-day1: hsl(343, 99%, 100%);
+    --back-day2: hsl(215, 100%, 50%);
+    /* ----------color----------- */
+    --black1:hsl(0, 0%, 14%);
+    --black2:hsl(224, 20%, 19%);
+
+    /* ----------night----------- */
+    --back-night1: linear-gradient(160deg, #0543b8 0%, #80D0C7 100%);    
+    --back-night2: hsl(215, 100%, 50%);
+    /* ----------color----------- */
+    --white1:hsl(341, 96%, 97%);
+    --white2:hsl(0, 0%, 91%);
+}
+/* .dark{
+
+} */
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+html{
+    font-size: 15px;
+    box-sizing: border-box;
+    font-family: 'Cinzel', serif;
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    /*
+    background-color: black;
+    transition: backgroun-color .5s ease-in-out
+    */
+    font-weight: 100;
+    background-color: --back-1;
+    width: 90%;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 3rem;
+    font-weight: 800;
+}
+p{
+    font-family: 'Cormorant', serif;
+    font-weight: 100;
+    color: var(--black1);
+}
+
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    letter-spacing: 6px;
+    transition: color 0.5s ease-in-out;
+}
+h1:hover{
+    color: orangered;
+    cursor:none;
+}
+.hero-1 p{
+    font-size: 24px;
+    text-align: center;
+}
+.hero-1 span{
+    color:var(--back-dar2);
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;  
+    transition: color 0.5s ease-in-out;
+
+
+}
+.hero-1 span:hover{
+    color: orangered;
+    cursor:pointer;
+}
+.hero-2 img{
+    margin: 30px;
+    width: 600px;
+    animation-name: rotateCode;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateCode{
+    from{
+        transform: rotate(0deg);
+    } to {
+        transform: rotate(360deg);
+    } 
+}
+
+
+/* ----------line----------- */
+
+.line{
+
+    margin: 60px;
+    box-shadow:  -1px -1px 3px 0 black;
+}
+
+/* ----------main----------- */
+main{
+    margin: 0 auto;
+}
+section{
+
+    margin: 0 auto;
+}
+/* ----------about----------- */
+.about {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about-1{
+    width: 57%;
+    text-align: center;
+}
+.about-2 img{
+    width: 27em;
+    margin: 30px;
+    border-radius: 100%;
+    box-shadow: -3px 3px 3px ;
+}
+.btn-cv{
+    background-color: var(--back-day2);
+    color: var(--white1);
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+/* ----------portfolio----------- */
+.portfolio{
+    margin: 9rem auto;
+    text-align: right;
+    transition: 0.5s ease-in-out;
+}
+details{
+    opacity: 0.1;
+    transition: 0.5s ease-in-out;
+}
+details[open]{
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+.portfolio li{
+    list-style: none;
+}
+/* ----------skills----------- */
+.skills{
+    margin: 9rem auto;
+    text-align: left;
+}
+
+
+.programs img{
+    width: 8rem;   
+    margin: 30px 10%;
+}
+summary{
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    background-color: var(--white2);
+}
+summary:hover{
+    color: var(--back-dar2);
+}
+
+/* ----------contact----------- */
+.contact, .contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 30px auto;
+    width: 70%;
+}
+input, label, textarea{
+    max-width: 100%;
+    min-width: 100%;
+    font-family: 'Cormorant', serif;
+    font-weight: 100;
+    padding: 9px;
+}
+.btn-submit{
+    margin: 30px;
+    border: 1px solid hsl(0, 0%, 65%);
+    border-radius: 3px;
+    background-color: var(--white2);
+    transition: 0.5s ease-in-out;
+
+}
+.btn-submit:hover{
+    background-color: var(--back-night2);
+    border: 1px solid hsl(239, 100%, 50%);
+    color: var(--white1);
+}
+
+
+/* ----------footer----------- */
+footer{
+    background-color: black;
+    height: 20vh;
+    display: grid;
+    place-content: center;
+    color: var(--white1);
+}
+footer p{
+    color: var(--white1);
+}
+/* ----------@media----------- */
+@media (max-width: 1020px){
+    .about-1{
+        width: 80%;
+    }
+}
+@media (max-width:450px) {
+    body{
+        width: 100%;
+    }
+    .about-1{
+        width: 100%;
+
+    }
+    .hero-2 img{
+        width: 21rem;
+    }
+
+}
