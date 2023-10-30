@@ -148,7 +148,7 @@ section{
     transition: 0.5s ease-in-out;
 }
 details{
-    opacity: 0.1;
+    opacity: 0.5;
     transition: 0.5s ease-in-out;
 }
 details[open]{
@@ -174,9 +174,7 @@ summary{
     transition: 0.5s ease-in-out;
     background-color: var(--white2);
 }
-summary:hover{
-    color: var(--back-dar2);
-}
+
 
 /* ----------contact----------- */
 .contact, .contact form{
