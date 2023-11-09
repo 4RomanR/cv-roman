@@ -12,7 +12,7 @@
     <meta name="description" content="Web developer fullstack">
 </head>
 <body>
-     
+     <div class="progress"></div>
   
       
     <header id="header">   
@@ -21,13 +21,13 @@
             <button id="bx-menu" class="btn-box btn-open">
                 <img  class='bx-menu ' src="/assets/img/menu.png" alt="menu"></img>
             </button>
-            <ul class="nav-bar-list nav-close">
+            <ul class=" nav-bar-list nav-close">
                 <button class="btn-close"><img src="/assets/img/x.png" alt="close"></button> 
-                <li> <a href="#header">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#portfolio">PORTFOLIO</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li class="list-link"> <a href="#header" class="active">HOME</a></li>
+                <li class="list-link"><a href="#about" class="active">ABOUT</a></li>
+                <li class="list-link"><a href="#portfolio" class="active">PORTFOLIO</a></li>
+                <li class="list-link"><a href="#skills" class="active">SKILLS</a></li>
+                <li class="list-link"><a href="#contact" class="active">CONTACT</a></li>
             </ul>
         </nav> 
 
@@ -127,7 +127,37 @@
             </div>
         </section>
         <!-- TESTIMONIALS -->
-
+        <section id="testimonials" class="section-box tests">
+            <h2 class="title-h2">TESTIMONIALS</h2>
+            <div class="tests-cards">
+                <div class="tests-img">
+                    <img src="./assets/img/rox.png" alt="MongoDB">
+                </div>
+                <div class="tests-txt">
+                    <h3 class="title-h3 tests-h3">Roxanne</h3>
+                    <p>Impressive design and functionality. The page loads quickly, and navigation is intuitive. Excellent job on web development!</p>
+                </div>            
+            </div>
+            <div class="tests-cards">
+                <div class="tests-img">
+                    <img src="./assets/img/laury.png" alt="MongoDB">
+                </div>
+                <div class="tests-txt">
+                    <h3 class="title-h3 tests-h3">Laury</h3>
+                    <p>I love how you've brought our vision to life on the website. The modern aesthetic and easy accessibility are just what we needed. Incredible development work!</p>
+                </div>            
+            </div>
+            <div class="tests-cards">
+                <div class="tests-img">
+                    <img src="./assets/img/miguelOs.png" alt="MongoDB">
+                </div>
+                <div class="tests-txt">
+                    <h3 class="title-h3 tests-h3">Miguel</h3>
+                    <p>The new website exceeded our expectations. The integration of the latest technological trends is evident, and the development team did an exceptional job on every detail. Congratulations!</p>
+                </div>            
+            </div>
+            
+        </section>
         <!-- CONTACT -->
         <section id="contact" class="section-box contact">
             <div class="contact--h2">
