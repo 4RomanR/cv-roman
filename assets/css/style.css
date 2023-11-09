@@ -98,7 +98,8 @@ button{
     padding-top: 90px;
     transition: 0.5s ease-in-out;
 }
-.nav-open.active{
+.active{
+    padding: 15px;
     background-color: var(--bg-4);
 }
 .nav-open img{
