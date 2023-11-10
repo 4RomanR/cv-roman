@@ -5,11 +5,12 @@
     --le-3:#b00707;
     --le-4:#6eb8f5;
     /*---------Backgrounds---------*/
-    --bg-1:#092040;
+    --bg-1:#041834;
     --bg-2:#ce8f5a;
     --bg-3:#b9defb;
     --bg-4:#b00707;
     --bg-5:#e8f5ff;
+    --bg-6:#051327;
 
 }
 
@@ -26,6 +27,10 @@
 html{
     scroll-behavior:smooth;
     scroll-padding-top: 39px;
+}
+body{
+    background-color: var(--bg-5);
+    transition: 1.5s ease-in-out;
 }
 p{
     margin: 12px auto;
@@ -67,6 +72,44 @@ button{
     height: 3px;
     background-color: var(--bg-4);
     z-index: 11;
+}
+/*---------DARK MODE---------*/
+.checkbox[type='checkbox']{
+    z-index: 14;
+    position: fixed;
+    top: 9px;
+    left: 15px;
+    width: 30px;
+    height: 21px;
+    background-color: var(--bg-5);
+    appearance: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 1.5s ease-in-out;
+}
+.checkbox[type='checkbox']:checked{
+    background-color: var(--bg-4);
+
+}
+.checkbox[type='checkbox']::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: pink;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.5s ease-in-out;
+}
+.checkbox[type='checkbox']:checked:before{
+    transform: translateX(9px);
+}
+.dark{
+    background:var(--bg-6);
+    color:white;
+    transition: 1.5s ease-in-out;
 }
 /*---------START MENU---------*/
 
@@ -570,6 +613,9 @@ footer strong{
         align-items: center;
         width: 100%;
     }
+    .tests-cards p{
+        width: 70%;
+    }
     .triangle{
         top: 0;
         left: 300px;
@@ -617,6 +663,9 @@ footer strong{
     .textarea{
         width: 99%;
     }
+    .tests-cards p{
+        width: 100%;
+    }
 }
 @media (min-width: 1980px) {
     .hero-h1 h1{
@@ -633,4 +682,12 @@ footer strong{
     }
 
 }
+/* 
+@media (prefers-color-scheme:dark){
+    body{
+        background:var(--bg-6);
+        color:white;
+    }
+} */
+
 
