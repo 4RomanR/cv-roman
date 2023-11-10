@@ -77,8 +77,8 @@ button{
 .checkbox[type='checkbox']{
     z-index: 14;
     position: fixed;
-    top: 39px;
-    right: 15px;
+    top: 18px;
+    right: 48px;
     width: 30px;
     height: 21px;
     background-color: var(--bg-5);
