@@ -98,10 +98,7 @@ button{
     padding-top: 90px;
     transition: 0.5s ease-in-out;
 }
-.active{
-    padding: 15px;
-    background-color: var(--bg-4);
-}
+
 .nav-open img{
     width: 60px;
 }
@@ -112,9 +109,10 @@ button{
     font-weight: 400;
     transition: 0.5s ease-in-out;
 }
-.nav-open li:hover{
+.nav-open li a.active{
     background-color: var(--bg-4);
     padding: 6px 33px;
+    border-radius: 3px 12px 3px 12px;
 }
 
 .nav-open img{
@@ -452,6 +450,8 @@ input, label {
     box-shadow: -3px 3px 12px 1px var(--bg-1);
     margin: 0 15px;
 }
+
+
 /* ----------footer----------- */
 .footer{
     background-color: var(--bg-1);
