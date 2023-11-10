@@ -14,9 +14,10 @@
 //     menu.classList.remove('nav-open')
 //     console.log('cierre')
 // })
+
+//--------MENU NAV--------//
 const menu =  document.querySelector(".nav-bar-list");
 const headerNav = document.querySelector('.nav-bar')
-
 
 headerNav.addEventListener('click', function(e){
     if (e.target.closest('.btn-open')){
@@ -27,6 +28,8 @@ headerNav.addEventListener('click', function(e){
     } 
 
 })
+
+//--------Selector NAV--------//
 const navLinks = document.querySelectorAll('.list-link')
 navLinks.forEach(navLinks => {
     navLinks.addEventListener('click', () =>{
@@ -38,7 +41,7 @@ navLinks.forEach(navLinks => {
 const html = document.documentElement
 console.log(html.scrollHeight)
 
-
+//--------Scroll roll--------//
 const progressHtml = document.querySelector('.progress')
 window.addEventListener('scroll', function(e){
     const pageHeight = html.scrollHeight - html.clientHeight
@@ -48,4 +51,6 @@ window.addEventListener('scroll', function(e){
 
 })
 
+//--------Scroll reveal--------// 
+ScrollReveal().reveal('.headline');
 

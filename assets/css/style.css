@@ -25,6 +25,7 @@
 }
 html{
     scroll-behavior:smooth;
+    scroll-padding-top: 39px;
 }
 p{
     margin: 12px auto;
@@ -130,6 +131,7 @@ button{
     background-color:var(--bg-1);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter:blur(10px);
+    z-index: 1;
 
 }
 .bx-menu{
@@ -413,7 +415,7 @@ input, label {
     background-color: var(--bg-4);
     color: var(--le-1);
 }
-/* ----------testimonials----------- */
+/* ----------TESTIMONIALS----------- */
 .tests h2{
     margin: 15px;
 }
@@ -430,6 +432,7 @@ input, label {
     box-shadow: 1px 1px 1px 1px  #ffffff, 3px 3px 9px 3px #000;
     transition: 0.5s ease-in-out;
     width: 300px;
+    
 }
 .tests-cards:hover{
     background-color: var(--bg-3);
