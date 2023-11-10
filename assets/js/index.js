@@ -51,6 +51,3 @@ window.addEventListener('scroll', function(e){
 
 })
 
-//--------Scroll reveal--------// 
-ScrollReveal().reveal('.headline');
-
